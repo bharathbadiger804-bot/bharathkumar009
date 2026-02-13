@@ -42,22 +42,23 @@
   position: relative;
   background-color: #fff;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 90%;
-  top: 5%;
+  height: 120px;
+  margin: 5% auto;
+  padding: 15px;
   border-radius: 6px;
   box-shadow: 0 2px 26px rgba(0, 0, 0, 0.12);
   font-family: "Dancing Script", cursive;
+  overflow-y: auto;
+  text-align: center;
 }
 
-.letter:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.letter::-webkit-scrollbar {
+  width: 6px;
+}
+
+.letter::-webkit-scrollbar-thumb {
+  background-color: #d9534f;
+  border-radius: 10px;
 }
 
 .words {
@@ -89,6 +90,12 @@
 }
 
 .words.line4 {
+  top: 70%;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.words.line5 {
   top: 70%;
   font-size: 1.1rem;
   text-align: center;
@@ -264,3 +271,4 @@ body {
   background-color: #d9534f;
   color: #fff;
 }
+
